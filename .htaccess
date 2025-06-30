@@ -1,0 +1,10 @@
+# Disable directory listing
+Options -Indexes
+
+# Allow basic PHP handling (Apache already handles this in most XAMPP installs)
+<Files *.php>
+    Require all granted
+</Files>
+
+# Optional: Redirect users to index.html by default
+DirectoryIndex index.html
